@@ -32,8 +32,9 @@ let eulerTask8 = (numberOfDigits) => {
             largest = product
         }
     }
+
     return largest
 }
 
-console.log(eulerTask8(13))
+console.log(largestProductinaSeries(13))
 console.timeEnd('TIME')

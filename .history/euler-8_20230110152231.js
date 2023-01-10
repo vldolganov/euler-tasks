@@ -32,6 +32,7 @@ let eulerTask8 = (numberOfDigits) => {
             largest = product
         }
     }
+
     return largest
 }
 

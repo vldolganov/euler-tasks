@@ -21,19 +21,23 @@ let numbersList = [7, 3, 1, 6, 7, 1, 7, 6, 5, 3, 1, 3, 3, 0, 6, 2, 4, 9, 1, 9, 2
     7, 7, 5, 4, 1, 0, 0, 2, 2, 5, 6, 9, 8, 3, 1, 5, 5, 2, 0, 0, 0, 5, 5, 9, 3, 5, 7, 2, 9, 7, 2, 5, 7, 1, 6, 3, 6, 2, 6, 9, 5, 6, 1, 8, 8, 2, 6, 7, 0, 4, 
     2, 8, 2, 5, 2, 4, 8, 3, 6, 0, 0, 8, 2, 3, 2, 5, 7, 5, 3, 0, 4, 2, 0, 7, 5, 2, 9, 6, 3, 4, 5, 0]
 
-let eulerTask8 = (numberOfDigits) => {
+let largestProductinaSeries = (numberOfDigits) => {
     let largest = 0
-    for(let startIndex = 0; startIndex < 1000-numberOfDigits; startIndex ++){
+    let startIndex
+    for(startIndex = 0; startIndex < 1000-numberOfDigits; startIndex ++){
+
         let product = numbersList[startIndex]
         for(let i = 1; i < numberOfDigits; i ++){
             product = product * numbersList[startIndex + i]
         }
+
         if(product > largest){
             largest = product
         }
     }
+
     return largest
 }
 
-console.log(eulerTask8(13))
+console.log(largestProductinaSeries(13))
 console.timeEnd('TIME')
