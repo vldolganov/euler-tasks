@@ -1,2 +1,0 @@
-//Euler Task 7
-
