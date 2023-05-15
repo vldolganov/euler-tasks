@@ -15,4 +15,4 @@ function factorialDigitSum(n) {
   }
   
   console.log(factorialDigitSum(100));
-  
+  console.timeEnd('TIME')
