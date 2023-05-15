@@ -6,9 +6,9 @@ function factorialDigitSum(n) {
     }
   
     let digitSum = 0;
-    while (factorial > 0) {
-      digitSum += factorial % 10n;
-      factorial /= 10n;
+    const factorialString = factorial.toString();
+    for (let i = 0; i < factorialString.length; i++) {
+      digitSum += parseInt(factorialString.charAt(i));
     }
   
     return digitSum;
